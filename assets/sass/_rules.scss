@@ -3,6 +3,10 @@
 
 $white: #F8F8F8;
 
+strong {
+    color: #d13838;
+}
+
 body.rules {
     background-color: $white;
 
@@ -19,20 +23,56 @@ body.rules {
             padding: 0;
         }
 
-        h2 {
-            margin: 65px 0 15px 0;
-            padding: 0;
+        nav  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            h2 {
+                margin: 65px 0 15px 30px;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+
+                    &:visited {
+                        color: black;
+                    }
+
+                    &:hover {
+                        color: #d13838;
+                    }
+                }
+            }
         }
+
     }
 
     section {
-        //margin: 0;
-        padding: 40px 0;
+        margin: 0 50px;
+        padding: 20px 0 50px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 
-        h3 {
-            font-size: 28px;
+        div.head-emoji {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                padding: 0 20px;
+                text-align: center;
+                align-items: center;
+                font-size: 42px;
+            }
         }
+
         ul {
             li {
                 margin: 22px;
@@ -40,6 +80,41 @@ body.rules {
                 font-size: 22px;
                 line-height: 33px;
             }
+        }
+    }
+
+    section.house-rules {
+        margin: 0 0 0 20px;
+        padding: 0;
+        border-bottom: none;
+
+            h2 {
+                margin: 20px 0;
+                padding: 40px 0 0 0;
+                font-size: 35px;
+                color: #d13838;
+            }
+
+            img {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 50%;
+                height: 100px;
+                margin-top: 40px;
+            }
+    }
+
+    section.logistics {
+        margin-top: 0;
+    }
+
+    section.scoring {
+        img {
+            position: absolute;
+            left: 50%;
+            top: 105%;
+            height: 200px;
         }
     }
 }
