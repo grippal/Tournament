@@ -42,10 +42,6 @@ body.rules {
                     &:hover {
                         color: #d13838;
                     }
-
-                    &:active {
-                        color: #d13838;
-                    }
                 }
             }
         }
@@ -82,6 +78,7 @@ body.rules {
                 margin: 22px;
                 padding: 0;
                 font-size: 22px;
+                font-weight: 500;
                 line-height: 33px;
             }
         }
@@ -104,7 +101,7 @@ body.rules {
                 padding: 0;
                 position: absolute;
                 left: 50%;
-                height: 100px;
+                height: 80px;
                 margin-top: 40px;
             }
     }
@@ -116,8 +113,9 @@ body.rules {
     section.scoring {
         img {
             position: absolute;
-            left: 50%;
-            top: 105%;
+            margin-top: 30px;
+            left: 45%;
+            //top: 105%;
             height: 200px;
         }
     }
