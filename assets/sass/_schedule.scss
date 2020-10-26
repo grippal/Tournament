@@ -95,7 +95,7 @@ body.schedule {
         div.week {
             display: grid;
             grid-template-columns: auto 50px 250px 50px auto;
-            grid-template-rows: repeat(4, 70px);
+            grid-template-rows: repeat(5, 70px);
             row-gap: 10px;
 
             margin: 0;
